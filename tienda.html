@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merchandising oficial de 8-Bit Galaxy.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <title>8-Bit Galaxy V2.0 - Tienda</title>
+</head>
+<body>
+    <header class="main-header" id="home">
+        <a href="index.html" class="logo">
+            <img src="src/logo-nav.webp" alt="Logo Principal">
+        </a>
+
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#games">Juegos</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#formulario">Contacto</a></li>
+                </ul>
+        </nav>
+
+        <div class="header-cart">
+            <a href="#" id="abrir-carrito">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <span id="cart-counter">0</span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="merchandising" style="margin-top: 150px; min-height: 60vh;">
+            <h2 class="section-title">Merchandising Retro</h2>
+            <div id="productos-container" class="games-container">
+                <!-- Tarjetas inyectadas por JS -->
+            </div>
+        </section>
+
+            <!-- Carrito -->
+        <div id="modal-carrito" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn" id="cerrar-carrito"><i class="fa-solid fa-xmark"></i></a>
+                <h2 class="modal-title">Tu Carrito</h2>
+                <div id="carrito-contenedor"></div>
+                <h3 style="color: #2196f3; margin-top: 20px;">Total: $<span id="precio-total">0</span></h3>
+                <button class="btn-primary" id="btn-comprar" style="margin-top: 15px;">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Seguinos</h3>
+            <div class="social-links">
+                <a href="https://twitch.tv/" target="_blank" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <p class="copyright">
+                &copy; 2026 8-Bit Galaxy - Todos los derechos reservados. <br>
+                <span>Desarrollado por <a href="https://github.com/Zaiko423" target="_blank" class="dev"><strong>Leandro Hernan Luna</strong></a> para Talento Tech.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="8-Bit Galaxy: Descubre los mejores juegos clásicos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <title>8-Bit Galaxy V2.0 - Proyecto Final</title>
+</head>
+<body>
+    <header class="main-header" id="home">
+        <a href="index.html" class="logo">
+            <img src="src/logo-nav.webp" alt="Logo Principal">
+        </a>
+
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#games">Juegos</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#formulario">Contacto</a></li>
+                </ul>
+        </nav>
+
+        <div class="header-cart">
+            <a href="#" id="abrir-carrito">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <span id="cart-counter">0</span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a 8-Bit Galaxy V2.0</h1>
+
+                <p>Descubre, revive y califica los mejores clásicos de la historia.</p>
+
+                <a href="#games" class="btn-primary">Ver Juegos Clásicos</a>
+            </div>
+        </section>
+
+        <section id="games">
+            <h2 class="section-title">Juegos Clásicos Más Jugados</h2>
+
+            <div class="games-container">
+                <div class="card-game">
+                    <a href="#modal-mario" class="card-link">
+                        <img src="src/SuperMarioBros.webp" alt="Super Mario Bros">
+                        <h3>Super Mario Bros</h3>
+                    </a>
+                </div>
+
+                <div class="card-game">
+                    <a href="#modal-kirby" class="card-link">
+                        <img src="src/KirbysAdventure.webp" alt="Kirby's Adventure">
+                        <h3>Kirby's Adventure</h3>
+                    </a>
+                </div>
+
+                <div class="card-game">
+                    <a href="#modal-ice-climber" class="card-link">
+                        <img src="src/IceClimber.webp" alt="Ice Climber">
+                        <h3>Ice Climber</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2 class="section-title">Lo que dice la comunidad</h2>
+            <div class="reviews-container">
+                <div class="card-review">
+                    <img src="src/Avatar1.webp" alt="Avatar de RetroCat23" class="avatar">
+                    <h3 class="nickname">RetroCat23</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, dolores!</p>
+                </div>
+
+                <div class="card-review">
+                    <img src="src/Avatar2.webp" alt="Avatar de AstroBoy01" class="avatar">
+                    <h3 class="nickname">AstroBoy01</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis repudiandae ipsam sint nihil deleniti?</p>
+                </div>
+
+                <div class="card-review">
+                    <img src="src/Avatar3.webp" alt="Avatar de PixelQueen" class="avatar">
+                    <h3 class="nickname">PixelQueen</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+            
+        <section id="formulario">
+            <h2 class="section-title">Contacto</h2>
+            
+            <form action="https://formspree.io/f/mbdqnrrp" method="POST">
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Juan..." required>
+                    </li>
+                    <li>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Pérez..." required>
+                    </li>
+                    <li>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" placeholder="juan@correo.com" required>
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
+                    </li>
+                    <button type="submit">Enviar</button>
+                </ul>
+            </form>
+        </section>
+    
+        <div id="modal-mario" class="modal">
+            <div class="modal-content">
+                <a href="#games" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h2 class="modal-title">Super Mario Bros</h2>
+                <p class="modal-text">Super Mario Bros es un videojuego desarrollado por Nintendo para la NES. Los jugadores controlan a Mario, o a su hermano Luigi, para atravesar el Reino Champiñón y rescatar a la princesa Peach del rey Bowser.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ia8bhFoqkVE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-kirby" class="modal">
+            <div class="modal-content">
+                <a href="#games" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h2 class="modal-title">Kirby's Adventure</h2>
+                <p class="modal-text">Kirby's Adventure es un videojuego desarrollado por HAL Laboratory. Es el segundo juego de la serie Kirby y el primero en incluir la habilidad de obtener poderes al comerse a ciertos enemigos.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LyU-mKTAauk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-ice-climber" class="modal">
+            <div class="modal-content">
+                <a href="#games" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h2 class="modal-title">Ice Climber</h2>
+                <p class="modal-text">Ice Climber es un videojuego para NES de Nintendo. El jugador 1 controla a Popo, mientras el jugador 2 controla a Nana. Ambos tienen que saltar con un martillo golpeando bloques para crear agujeros y subir a este.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/GkffCj98bew" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Carrito -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-btn" id="cerrar-carrito"><i class="fa-solid fa-xmark"></i></a>
+            <h2 class="modal-title">Tu Carrito</h2>
+            <div id="carrito-contenedor">
+                <!-- Productos del carrito -->
+            </div>
+            <h3 style="color: #2196f3; margin-top: 20px;">Total: $<span id="precio-total">0</span></h3>
+            <button class="btn-primary" id="btn-comprar" style="margin-top: 15px;">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Seguinos</h3>
+            <div class="social-links">
+                <a href="https://twitch.tv/" target="_blank" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <p class="copyright">
+                &copy; 2026 8-Bit Galaxy - Todos los derechos reservados. <br>
+                <span>Desarrollado por <a href="https://github.com/Zaiko423" target="_blank" class="dev"><strong>Leandro Hernan Luna</strong></a> para Talento Tech.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
